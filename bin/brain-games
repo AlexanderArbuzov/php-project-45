@@ -1,0 +1,3 @@
+<?php
+chmod +x bin/brain-games
+print_r("Welcome to the Brain Games!");

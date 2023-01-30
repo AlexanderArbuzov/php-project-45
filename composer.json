@@ -1,0 +1,6 @@
+{
+    "name": "hexlet/code",
+    "description": "My php project",
+    "require": {},
+    "license": "MIT"
+}
