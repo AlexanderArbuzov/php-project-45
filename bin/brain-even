@@ -11,9 +11,7 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-use php\project_45\autoload;
 use php\project_45\Cli;
+use php\project_45\isEven;
 
-autoload\autoload();
-
-Cli\helloMsg();
+isEven\isCorrect(isEven\getCorrectAnswers(), Cli\helloMsg());
