@@ -2,12 +2,11 @@
 
 declare(strict_types=1);
 
-namespace php\project_45\Cli;
+namespace php\project_45\engine\client;
 
 use function cli\line;
 use function cli\prompt;
-
-function helloMsg(): string
+function getUserName(): string
 {
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?', "Agent Smith");

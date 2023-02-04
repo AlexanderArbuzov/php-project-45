@@ -2,7 +2,8 @@
     "name": "hexlet/code",
     "bin": [
         "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "description": "My php project",
     "require": {
@@ -11,8 +12,11 @@
     "license": "MIT",
     "autoload": {
         "files": [
-            "src/Cli.php",
-            "src/isEven.php"
+            "src/engine/client.php",
+            "src/engine/check.php",
+            "src/data/isEven.php",
+            "src/data/calc.php",
+            "src/build.php"
         ]
     },
     "require-dev": {
