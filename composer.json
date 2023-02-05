@@ -3,7 +3,9 @@
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
-        "bin/brain-calc"
+        "bin/brain-calc",
+        "bin/brain-gcd",
+        "bin/brain-progression"
     ],
     "description": "My php project",
     "require": {
@@ -14,9 +16,12 @@
         "files": [
             "src/engine/client.php",
             "src/engine/check.php",
+            "src/data/tasks.php",
+            "src/build.php",
             "src/data/isEven.php",
             "src/data/calc.php",
-            "src/build.php"
+            "src/data/gcd.php",
+            "src/data/progression.php"
         ]
     },
     "require-dev": {
