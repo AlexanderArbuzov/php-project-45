@@ -2,8 +2,9 @@
 
 declare(strict_types=1);
 
-namespace php\project_45\data\isEven;
+namespace php\project_45\data\prime;
 
+use function php\project_45\utils\isPrime\isPrime;
 use function Illuminate\Support\Collection;
 
 function getCorrectAnswers(int $iterations, int $beginningOfInterval = 0, int $endOfInterval = 99): array
@@ -17,6 +18,6 @@ function getCorrectAnswers(int $iterations, int $beginningOfInterval = 0, int $e
     $collection = collect($randomNumbers);
 
     return $collection->map(function ($item) {
-        return $item % 2 == 0 ? ['Exercise' => $item, 'Answer' => 'yes'] : ['Exercise' => $item, 'Answer' => 'no'];
+        return isPrime($item) ? ['Exercise' => $item, 'Answer' => 'yes'] : ['Exercise' => $item, 'Answer' => 'no'];
     })->all();
 }

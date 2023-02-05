@@ -10,6 +10,7 @@ use php\project_45\data\isEven;
 use php\project_45\data\calc;
 use php\project_45\data\gcd;
 use php\project_45\data\progression;
+use php\project_45\data\prime;
 use function php\project_45\data\tasks\getTask;
 use function php\project_45\engine\check\isCorrectAnswers;
 use function php\project_45\engine\client\getUserName;
@@ -28,6 +29,9 @@ function gameSelect(string $game): void
             break;
         case 'progression':
             isCorrectAnswers(getTask($game), progression\getCorrectAnswers(ITERATIONS), getUserName());
+            break;
+        case 'prime':
+            isCorrectAnswers(getTask($game), prime\getCorrectAnswers(ITERATIONS), getUserName());
             break;
     }
 }

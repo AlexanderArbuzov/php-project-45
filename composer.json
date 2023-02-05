@@ -5,7 +5,8 @@
         "bin/brain-even",
         "bin/brain-calc",
         "bin/brain-gcd",
-        "bin/brain-progression"
+        "bin/brain-progression",
+        "bin/brain-prime"
     ],
     "description": "My php project",
     "require": {
@@ -21,7 +22,9 @@
             "src/data/isEven.php",
             "src/data/calc.php",
             "src/data/gcd.php",
-            "src/data/progression.php"
+            "src/data/progression.php",
+            "src/data/prime.php",
+            "src/utils/isPrime.php"
         ]
     },
     "require-dev": {

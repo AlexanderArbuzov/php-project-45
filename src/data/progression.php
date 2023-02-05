@@ -6,15 +6,15 @@ namespace php\project_45\data\progression;
 
 use function Illuminate\Support\Collection;
 
-function getCorrectAnswers(int $iterations): array
+function getCorrectAnswers(int $iterations, int $beginningOfInterval = 0, int $endOfInterval = 99): array
 {
     $progressions = [];
 
     for ($i = 0; $i < $iterations; $i += 1) {
         $progression = [];
-        $progressionLength = rand(10, 99);
-        $firstTerm = rand(0, 99);
-        $d = rand(1, 99);
+        $progressionLength = rand(10, $endOfInterval);
+        $firstTerm = rand($beginningOfInterval, $endOfInterval);
+        $d = rand(1, $endOfInterval);
 
         for ($j = 0; $j < $progressionLength; $j += 1) {
             if (count($progression) === 0) {

@@ -6,13 +6,13 @@ namespace php\project_45\data\calc;
 
 use function Illuminate\Support\Collection;
 
-function getCorrectAnswers(int $iterations): array
+function getCorrectAnswers(int $iterations, int $beginningOfInterval = 0, int $endOfInterval = 99): array
 {
     $randomNumbers = [];
     $operations = collect(["+", "-", "*"]);
 
     for ($i = 0; $i < $iterations; $i += 1) {
-        $randomNumbers[] = ['FirstOperand' => rand(0, 99), 'SecondOperand' => rand(0, 99)];
+        $randomNumbers[] = ['FirstOperand' => rand($beginningOfInterval, $endOfInterval), 'SecondOperand' => rand($beginningOfInterval, $endOfInterval)];
     }
 
     $collection = collect($randomNumbers);
