@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php\project_45\data\isEven;
+namespace php\project_45\Games\gcd;
 
 use function Illuminate\Support\Collection;
 
@@ -11,12 +11,12 @@ function getCorrectAnswers(int $iterations, int $beginningOfInterval = 0, int $e
     $randomNumbers = [];
 
     for ($i = 0; $i < $iterations; $i += 1) {
-        $randomNumbers[] = rand($beginningOfInterval, $endOfInterval);
+        $randomNumbers[] = ['FirstOperand' => rand($beginningOfInterval, $endOfInterval), 'SecondOperand' => rand($beginningOfInterval, $endOfInterval)];
     }
 
     $collection = collect($randomNumbers);
 
     return $collection->map(function ($item) {
-        return $item % 2 == 0 ? ['Exercise' => $item, 'Answer' => 'yes'] : ['Exercise' => $item, 'Answer' => 'no'];
+        return ['Exercise' => $item['FirstOperand'] . ' ' . $item['SecondOperand'], 'Answer' => \gmp_gcd($item['FirstOperand'], $item['SecondOperand'])];
     })->all();
 }

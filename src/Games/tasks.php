@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php\project_45\data\tasks;
+namespace php\project_45\Games\tasks;
 
 use function cli\line;
 

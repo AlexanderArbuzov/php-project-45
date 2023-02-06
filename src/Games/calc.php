@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php\project_45\data\calc;
+namespace php\project_45\Games\calc;
 
 use function Illuminate\Support\Collection;
 

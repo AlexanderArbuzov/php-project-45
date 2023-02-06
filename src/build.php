@@ -6,12 +6,12 @@ namespace php\project_45\build;
 
 const ITERATIONS = 3;
 
-use php\project_45\data\isEven;
-use php\project_45\data\calc;
-use php\project_45\data\gcd;
-use php\project_45\data\progression;
-use php\project_45\data\prime;
-use function php\project_45\data\tasks\getTask;
+use php\project_45\Games\isEven;
+use php\project_45\Games\calc;
+use php\project_45\Games\gcd;
+use php\project_45\Games\progression;
+use php\project_45\Games\prime;
+use function php\project_45\Games\tasks\getTask;
 use function php\project_45\engine\check\isCorrectAnswers;
 use function php\project_45\engine\client\getUserName;
 

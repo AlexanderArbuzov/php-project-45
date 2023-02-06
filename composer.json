@@ -17,13 +17,13 @@
         "files": [
             "src/engine/client.php",
             "src/engine/check.php",
-            "src/data/tasks.php",
+            "src/Games/tasks.php",
             "src/build.php",
-            "src/data/isEven.php",
-            "src/data/calc.php",
-            "src/data/gcd.php",
-            "src/data/progression.php",
-            "src/data/prime.php",
+            "src/Games/isEven.php",
+            "src/Games/calc.php",
+            "src/Games/gcd.php",
+            "src/Games/progression.php",
+            "src/Games/prime.php",
             "src/utils/isPrime.php"
         ]
     },

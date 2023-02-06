@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace php\project_45\data\progression;
+namespace php\project_45\Games\progression;
 
 use function Illuminate\Support\Collection;
 
