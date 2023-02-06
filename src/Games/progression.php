@@ -25,7 +25,7 @@ function getCorrectAnswers(int $iterations, int $beginningOfInterval = 0, int $e
         }
 
         $collection = collect($progression);
-        $progressions[] = $collection->slice(rand(5, $progressionLength - 1), rand(5, 10))->flatten()->all();
+        $progressions[] = $collection->slice(rand(0, $progressionLength - 1), rand(5, 10))->flatten()->all();
     }
 
     $collection = collect($progressions);
