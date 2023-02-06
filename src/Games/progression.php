@@ -12,9 +12,11 @@ function getCorrectAnswers(int $iterations, int $beginningOfInterval = 0, int $e
 
     for ($i = 0; $i < $iterations; $i += 1) {
         $progression = [];
-        $progressionLength = rand(10, $endOfInterval);
+        $progressionLengthMin = 30;
+        $progressionLength = rand($progressionLengthMin, $endOfInterval);
         $firstTerm = rand($beginningOfInterval, $endOfInterval);
-        $d = rand(1, $endOfInterval);
+        $dMin = 1;
+        $d = rand($dMin, $endOfInterval);
 
         for ($j = 0; $j < $progressionLength; $j += 1) {
             if (count($progression) === 0) {
