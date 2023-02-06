@@ -40,6 +40,6 @@ function getCorrectAnswers(int $iterations, int $beginningOfInterval = 0, int $e
             $exercise = "{$exercise} {$value}";
         }
 
-        return ['Exercise' => $exercise, 'Answer' => $answer];
+        return ['Exercise' => trim($exercise), 'Answer' => $answer];
     })->all();
 }
