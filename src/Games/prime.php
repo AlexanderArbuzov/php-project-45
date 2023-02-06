@@ -4,8 +4,9 @@ declare(strict_types=1);
 
 namespace php\project_45\Games\prime;
 
+use Tightenco\Collect;
+
 use function php\project_45\utils\isPrime\isPrime;
-use function Illuminate\Support\Collection;
 
 function getCorrectAnswers(int $iterations, int $beginningOfInterval = 0, int $endOfInterval = 99): array
 {

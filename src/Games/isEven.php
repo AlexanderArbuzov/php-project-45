@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace php\project_45\Games\isEven;
 
-use function Illuminate\Support\Collection;
+use Tightenco\Collect;
 
 function getCorrectAnswers(int $iterations, int $beginningOfInterval = 0, int $endOfInterval = 99): array
 {
