@@ -24,7 +24,8 @@
             "src/Games/gcd.php",
             "src/Games/progression.php",
             "src/Games/prime.php",
-            "src/utils/isPrime.php"
+            "src/utils/isPrime.php",
+            "src/utils/gcd.php"
         ]
     },
     "require-dev": {

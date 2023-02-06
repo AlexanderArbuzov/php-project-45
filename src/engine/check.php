@@ -19,7 +19,8 @@ function isCorrectAnswers(string $task, array $correctAnswers, string $name): bo
         if ((string)$item['Answer'] === $userAnswer) {
             line("Correct!");
         } else {
-            line("'%s' is wrong answer ;(. Correct answer was '%s'\nLet's try again, %s!", $userAnswer, $item['Answer'], $name);
+            line("'%s' is wrong answer ;(. Correct answer was '%s'
+Let's try again, %s!", $userAnswer, $item['Answer'], $name);
             return false;
         }
     }

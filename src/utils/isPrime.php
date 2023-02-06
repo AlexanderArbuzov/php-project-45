@@ -18,4 +18,3 @@ function isPrime(int $number): bool
 
     return true;
 }
-

@@ -12,19 +12,23 @@ function getCorrectAnswers(int $iterations, int $beginningOfInterval = 0, int $e
     $operations = collect(["+", "-", "*"]);
 
     for ($i = 0; $i < $iterations; $i += 1) {
-        $randomNumbers[] = ['FirstOperand' => rand($beginningOfInterval, $endOfInterval), 'SecondOperand' => rand($beginningOfInterval, $endOfInterval)];
+        $randomNumbers[] = ['FirstOperand' => rand($beginningOfInterval, $endOfInterval),
+            'SecondOperand' => rand($beginningOfInterval, $endOfInterval)];
     }
 
     $collection = collect($randomNumbers);
 
-    return $collection->map(function ($item) use($operations) {
+    return $collection->map(function ($item) use ($operations) {
         switch ($operations->random()) {
             case '+':
-                return ['Exercise' => $item['FirstOperand'] . ' + ' . $item['SecondOperand'], 'Answer' => $item['FirstOperand'] + $item['SecondOperand']];
+                return ['Exercise' => $item['FirstOperand'] . ' + ' . $item['SecondOperand'],
+                    'Answer' => $item['FirstOperand'] + $item['SecondOperand']];
             case '-':
-                return ['Exercise' => $item['FirstOperand'] . ' - ' . $item['SecondOperand'], 'Answer' => $item['FirstOperand'] - $item['SecondOperand']];
+                return ['Exercise' => $item['FirstOperand'] . ' - ' . $item['SecondOperand'],
+                    'Answer' => $item['FirstOperand'] - $item['SecondOperand']];
             case '*':
-                return ['Exercise' => $item['FirstOperand'] . ' * ' . $item['SecondOperand'], 'Answer' => $item['FirstOperand'] * $item['SecondOperand']];
+                return ['Exercise' => $item['FirstOperand'] . ' * ' . $item['SecondOperand'],
+                    'Answer' => $item['FirstOperand'] * $item['SecondOperand']];
         }
     })->all();
 }
