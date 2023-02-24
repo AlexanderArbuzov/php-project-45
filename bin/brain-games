@@ -12,5 +12,31 @@ if (file_exists($autoloadPath1)) {
 }
 
 use function php\project_45\engine\client\getUserName;
+use function php\project_45\build\gameSelect;
+use PhpSchool\CliMenu\CliMenu;
+use PhpSchool\CliMenu\Builder\CliMenuBuilder;
 
-getUserName();
+//$itemCallable = function (CliMenu $menu) {
+//    gameSelect('prime');
+//};
+//
+//$itemCallable2 = function (CliMenu $menu) {
+//    gameSelect('calc');
+//    $menu->close();
+//};
+//
+//$menu = (new CliMenuBuilder)
+//    ->setTitle('Basic CLI Menu')
+//    ->addItem('Hello', $itemCallable)
+//    ->addItem('Second Item', $itemCallable2)
+//    ->addItem('Third Item', $itemCallable)
+//    ->addLineBreak('-')
+//    ->setBorder(1, 2, 'yellow')
+//    ->setPadding(2, 4)
+//    ->setMarginAuto()
+//    ->build();
+//
+//
+//$menu->open();
+
+//getUserName();
