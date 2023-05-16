@@ -13,8 +13,10 @@ if (file_exists($autoloadPath1)) {
 
 use function php\project_45\engine\client\getUserName;
 use function php\project_45\build\gameSelect;
-use PhpSchool\CliMenu\CliMenu;
-use PhpSchool\CliMenu\Builder\CliMenuBuilder;
+//use PhpSchool\CliMenu\CliMenu;
+//use PhpSchool\CliMenu\Builder\CliMenuBuilder;
+
+getUserName();
 
 //$itemCallable = function (CliMenu $menu) {
 //    gameSelect('prime');
